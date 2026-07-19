@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Cloud World LLC · U.S. Companies for LATAM</title>
+<meta name="description" content="Form your U.S. company. Sell globally, protect your assets, and access the international financial system. Advisory for Colombia and Latin America.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1B2356;--navy-deep:#10142F;--navy-mid:#232B6B;--navy-soft:#2C3570;
+  --gold:#C18A33;--gold-2:#D4A042;--gold-soft:#E0B563;--gold-pale:#F3E3C2;--gold-faint:#FBF4E6;
+  --cream:#F8F6F1;--pale-blue:#EEF0FA;--white:#fff;
+  --text:#1B2356;--muted:#5B6178;--border:#E2E4EF;
+  --green:#2A7A4B;--green-pale:#E8F5EE;
+  --max:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:600;letter-spacing:-.02em;line-height:1.15;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+.eyebrow{font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:currentColor;}
+section{padding:100px 0;}
+@media(max-width:700px){section{padding:64px 0;}.wrap{padding:0 18px;}}
+
+/* NAV */
+header{position:sticky;top:0;z-index:200;background:rgba(248,246,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);}
+nav.wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;}
+.logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);display:flex;align-items:baseline;gap:7px;flex-shrink:0;}
+.logo em{font-style:normal;font-family:'Inter',sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.12em;color:var(--gold);border:1px solid var(--gold);padding:2px 6px;border-radius:3px;}
+.nav-links{display:flex;gap:24px;font-size:13.5px;font-weight:500;color:var(--muted);}
+.nav-links a:hover{color:var(--navy);}
+.nav-right{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+
+/* Language toggle */
+.lang-toggle{display:flex;background:var(--pale-blue);border:1px solid var(--border);border-radius:6px;overflow:hidden;font-size:12px;font-weight:700;}
+.lang-btn{padding:7px 13px;cursor:pointer;border:none;background:none;font-family:inherit;font-size:12px;font-weight:700;color:var(--muted);transition:.18s;letter-spacing:.04em;}
+.lang-btn.active{background:var(--navy);color:#fff;}
+.lang-btn:hover:not(.active){color:var(--navy);}
+
+.nav-cta{background:var(--navy);color:#fff !important;padding:9px 18px;border-radius:5px;font-weight:600;font-size:13px;transition:.2s;white-space:nowrap;}
+.nav-cta:hover{background:var(--navy-soft);}
+@media(max-width:960px){.nav-links{display:none;}}
+@media(max-width:520px){.nav-cta{display:none;}}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--navy-deep) 0%,var(--navy) 55%,var(--navy-mid) 100%);color:#fff;padding:110px 0 90px;overflow:hidden;position:relative;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(193,138,51,.12) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;position:relative;z-index:1;}
+.hero .eyebrow{color:var(--gold-soft);}
+.hero h1{font-size:clamp(30px,4.2vw,52px);color:#fff;margin-bottom:20px;}
+.hero h1 em{font-style:italic;color:var(--gold-soft);}
+.hero .lead{font-size:16.5px;color:#C5C9E4;max-width:510px;margin-bottom:32px;line-height:1.7;}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:5px;font-weight:600;font-size:14.5px;border:1px solid transparent;transition:.2s;cursor:pointer;font-family:inherit;}
+.btn-gold{background:var(--gold);color:var(--navy-deep);}
+.btn-gold:hover{background:var(--gold-soft);transform:translateY(-1px);}
+.btn-ghost{border-color:rgba(255,255,255,.28);color:#fff;}
+.btn-ghost:hover{border-color:var(--gold-soft);color:var(--gold-soft);}
+.hero-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:36px;}
+.pill{font-size:12px;font-weight:600;color:#CDD0EA;border:1px solid rgba(255,255,255,.15);padding:6px 13px;border-radius:20px;background:rgba(255,255,255,.04);}
+.hero-visual{display:flex;flex-direction:column;gap:14px;}
+.hv-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:18px 20px;}
+.hv-card .tag{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:8px;}
+.hv-card .title{font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;}
+.hv-card .sub{font-size:13px;color:#9EA6D0;}
+.hv-arrow{text-align:center;font-size:22px;color:var(--gold-soft);}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr;}.hero-visual{display:none;}}
+
+/* TRUST BAR */
+.trust-bar{background:var(--navy-deep);padding:22px 0;}
+.trust-inner{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:40px;}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:#9EA4CC;font-weight:500;}
+@media(max-width:600px){.trust-inner{gap:22px;}.trust-item{font-size:12px;}}
+
+/* EJES */
+.ejes{background:var(--white);padding:80px 0;}
+.ejes-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:52px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+.eje{background:var(--white);padding:44px 40px;}
+.eje .eje-icon{font-size:34px;margin-bottom:18px;}
+.eje h3{font-size:22px;color:var(--navy);margin-bottom:12px;}
+.eje p{font-size:15px;color:var(--muted);margin-bottom:18px;}
+.eje ul{list-style:none;}
+.eje ul li{font-size:14px;color:var(--muted);padding:9px 0 9px 22px;position:relative;border-top:1px solid var(--border);}
+.eje ul li:first-child{border-top:none;}
+.eje ul li::before{content:"→";position:absolute;left:0;color:var(--gold);font-weight:700;}
+.eje-badge{display:inline-flex;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:20px;margin-bottom:14px;}
+.eje-badge.comercial{background:var(--green-pale);color:var(--green);}
+.eje-badge.patrimonial{background:var(--gold-pale);color:#7A5010;}
+@media(max-width:700px){.ejes-grid{grid-template-columns:1fr;}.eje{padding:32px 24px;}}
+
+/* BENEFICIOS COMERCIALES */
+.comercial-bg{background:var(--pale-blue);}
+.ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:46px;}
+@media(max-width:900px){.ben-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.ben-grid{grid-template-columns:1fr;}}
+.ben-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:28px 24px;transition:.2s;}
+.ben-card:hover{border-color:var(--gold);transform:translateY(-2px);}
+.ben-card .icon{font-size:26px;margin-bottom:14px;}
+.ben-card h3{font-size:17px;color:var(--navy);margin-bottom:8px;}
+.ben-card p{font-size:14px;color:var(--muted);}
+
+/* COMPARADOR */
+.comp-wrap{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:10px;}
+.comp-tabs{display:flex;background:var(--pale-blue);}
+.comp-tab{flex:1;text-align:center;padding:17px 10px;font-weight:700;font-size:14px;color:var(--muted);cursor:pointer;border:none;border-bottom:3px solid transparent;background:none;font-family:inherit;transition:.2s;}
+.comp-tab.active{color:var(--navy);border-bottom-color:var(--gold);background:var(--white);}
+.comp-body{padding:36px;}
+.comp-pane{display:none;}
+.comp-pane.active{display:block;}
+.comp-row{display:grid;grid-template-columns:180px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);}
+.comp-row:last-child{border:none;}
+.comp-row .k{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--navy);}
+.comp-row .v{font-size:14.5px;color:var(--muted);}
+.comp-fit{margin-top:18px;background:var(--gold-faint);border-left:3px solid var(--gold);padding:14px 16px;border-radius:6px;font-size:14.5px;color:var(--navy);}
+@media(max-width:560px){.comp-tabs{flex-direction:column;}.comp-row{grid-template-columns:1fr;gap:4px;}.comp-body{padding:22px;}}
+
+/* ESTADOS */
+.state-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px;}
+@media(max-width:860px){.state-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:500px){.state-grid{grid-template-columns:1fr;}}
+.state-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:22px 20px;transition:.2s;}
+.state-card:hover{border-color:var(--gold);transform:translateY(-2px);}
+.state-card .flag{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.state-card h4{font-size:17px;color:var(--navy);margin-bottom:7px;}
+.state-card p{font-size:13px;color:var(--muted);}
+
+/* PROCESO */
+.proceso-bg{background:var(--navy);color:#fff;}
+.proceso-bg .section-head h2{color:#fff;}
+.proceso-bg .section-head p{color:#B0B6D6;}
+.proceso-bg .eyebrow{color:var(--gold-soft);}
+.steps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:52px;position:relative;}
+.steps-grid::before{content:"";position:absolute;top:28px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,var(--gold),rgba(224,181,99,.2));}
+@media(max-width:860px){.steps-grid{grid-template-columns:1fr;}.steps-grid::before{display:none;}}
+.s-step{display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;}
+.s-num{width:56px;height:56px;border-radius:50%;background:var(--gold);color:var(--navy-deep);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:18px;position:relative;z-index:1;}
+.s-step h3{font-size:15.5px;color:#fff;margin-bottom:7px;}
+.s-step p{font-size:13px;color:#9EA6D0;}
+@media(max-width:860px){.s-step{flex-direction:row;text-align:left;gap:18px;padding:18px 0;border-top:1px solid rgba(255,255,255,.08);}.s-num{flex-shrink:0;}}
+
+/* ENTREGABLES */
+.ent-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:46px;}
+@media(max-width:900px){.ent-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:500px){.ent-grid{grid-template-columns:1fr;}}
+.ent-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:24px 20px;text-align:center;}
+.ent-card .num{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);font-weight:700;margin-bottom:8px;}
+.ent-card h3{font-size:14.5px;color:var(--navy);margin-bottom:6px;}
+.ent-card p{font-size:12.5px;color:var(--muted);}
+
+/* BANCA */
+.bank-bg{background:var(--pale-blue);}
+.bank-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:46px;}
+@media(max-width:660px){.bank-grid{grid-template-columns:1fr;}}
+.bank-col{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:32px;}
+.bank-col h3{font-size:18px;color:var(--navy);margin-bottom:16px;}
+.bank-col ul{list-style:none;}
+.bank-col li{font-size:14px;color:var(--muted);padding:10px 0 10px 22px;position:relative;border-top:1px solid var(--border);}
+.bank-col li:first-child{border-top:none;}
+.bank-col li::before{content:"—";position:absolute;left:0;color:var(--gold);font-weight:700;}
+
+/* KYC */
+.kyc-bg{background:var(--white);}
+.kyc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px;}
+@media(max-width:860px){.kyc-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:500px){.kyc-grid{grid-template-columns:1fr;}}
+.kyc-card{background:var(--pale-blue);border:1px solid var(--border);border-radius:10px;padding:24px;}
+.kyc-card .ic{font-size:24px;margin-bottom:12px;}
+.kyc-card h3{font-size:16px;color:var(--navy);margin-bottom:7px;}
+.kyc-card p{font-size:13.5px;color:var(--muted);}
+
+/* DOCS */
+.docs-bg{background:var(--navy-deep);padding:80px 0;}
+.docs-bg .eyebrow{color:var(--gold-soft);}
+.docs-bg .section-head h2{color:#fff;}
+.docs-bg .section-head p{color:#B0B6D6;}
+.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px;}
+@media(max-width:860px){.docs-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:520px){.docs-grid{grid-template-columns:1fr;}}
+.doc-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:22px 20px;transition:.2s;}
+.doc-card:hover{background:rgba(255,255,255,.1);border-color:var(--gold-soft);}
+.doc-card .tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:8px;}
+.doc-card h4{font-size:15px;color:#fff;margin-bottom:6px;}
+.doc-card p{font-size:12.5px;color:#9EA6D0;}
+
+/* DIFF */
+.diff-bg{background:var(--pale-blue);}
+.diff-row-item{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.diff-row-item:first-child{border-top:1px solid var(--border);}
+.diff-ic{width:40px;height:40px;border-radius:50%;background:var(--gold-pale);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;}
+.diff-row-item h4{font-size:16px;color:var(--navy);margin-bottom:4px;}
+.diff-row-item p{font-size:14px;color:var(--muted);}
+
+/* CALLOUT */
+.callout{background:var(--navy);color:#fff;border-radius:12px;padding:32px 36px;margin-top:44px;display:flex;gap:16px;align-items:flex-start;}
+.callout .ic{font-size:20px;color:var(--gold-soft);flex-shrink:0;margin-top:2px;}
+.callout h4{font-size:15px;color:var(--gold-soft);margin-bottom:7px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:.02em;}
+.callout p{font-size:13.5px;color:#C5C9E4;line-height:1.7;}
+
+/* CTA */
+.cta-final{background:radial-gradient(ellipse at 30% 100%,var(--navy-soft) 0%,var(--navy-deep) 75%);color:#fff;text-align:center;padding:110px 0;}
+.cta-final .eyebrow{justify-content:center;color:var(--gold-soft);}
+.cta-final .eyebrow::before{display:none;}
+.cta-final h2{font-size:clamp(26px,3.8vw,42px);max-width:680px;margin:0 auto 16px;}
+.cta-final p{color:#B0B6D6;max-width:500px;margin:0 auto 34px;font-size:16px;}
+.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+.contact-note{margin-top:34px;font-size:14px;color:#7880A8;}
+.contact-note a{color:var(--gold-soft);font-weight:600;}
+
+/* FOOTER */
+footer{background:var(--navy-deep);color:#6B73A0;padding:44px 0 32px;font-size:12.5px;}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:18px;margin-bottom:26px;}
+.foot-nav{display:flex;gap:22px;flex-wrap:wrap;font-size:13px;}
+.foot-nav a:hover{color:var(--gold-soft);}
+.legal{border-top:1px solid rgba(255,255,255,.07);padding-top:22px;line-height:1.8;}
+.section-head{max-width:660px;margin-bottom:0;}
+.section-head h2{font-size:clamp(24px,3vw,36px);color:var(--navy);margin-bottom:12px;}
+.section-head p{color:var(--muted);font-size:15.5px;}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <nav class="wrap">
+    <div class="logo">Virtual Cloud World <em>LLC</em></div>
+    <div class="nav-links">
+      <a href="#ejes" data-i18n="nav.what">Qué hacemos</a>
+      <a href="#comercial" data-i18n="nav.commercial">Operación comercial</a>
+      <a href="#estructuras" data-i18n="nav.structures">Estructuras</a>
+      <a href="#proceso" data-i18n="nav.process">Proceso</a>
+      <a href="#cumplimiento" data-i18n="nav.compliance">Cumplimiento</a>
+      <a href="cuestionario.html" data-i18n="nav.questionnaire">Cuestionario</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">ES</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+      <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Agendar consulta</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow" data-i18n="hero.eyebrow">Sociedades en EE.UU. para LATAM</div>
+      <h1 data-i18n="hero.h1">Opere, venda y proteja su patrimonio desde una <em>entidad americana</em></h1>
+      <p class="lead" data-i18n="hero.lead">Constitución, representación y cumplimiento de sociedades en Estados Unidos para personas naturales y jurídicas de Colombia y Latinoamérica.</p>
+      <div class="btn-row">
+        <a href="#contacto" class="btn btn-gold" data-i18n="hero.btn1">Agendar consulta</a>
+        <a href="cuestionario.html" class="btn btn-ghost" data-i18n="hero.btn2">Iniciar cuestionario</a>
+      </div>
+      <div class="hero-pills">
+        <span class="pill" data-i18n="pill.1">Operación comercial global</span>
+        <span class="pill" data-i18n="pill.2">Protección patrimonial</span>
+        <span class="pill" data-i18n="pill.3">Banca y cripto</span>
+        <span class="pill" data-i18n="pill.4">KYC · AML · DD</span>
+        <span class="pill" data-i18n="pill.5">Eficiencia fiscal</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-card">
+        <div class="tag" data-i18n="hv.tag1">Su situación actual</div>
+        <div class="title" data-i18n="hv.title1">Empresa o patrimonio en LATAM</div>
+        <div class="sub" data-i18n="hv.sub1">Expuesto a volatilidad, barreras bancarias y mercado local limitado</div>
+      </div>
+      <div class="hv-arrow">↓</div>
+      <div class="hv-card">
+        <div class="tag" data-i18n="hv.tag2">Lo que construimos juntos</div>
+        <div class="title" data-i18n="hv.title2">LLC o C-Corp en EE.UU.</div>
+        <div class="sub" data-i18n="hv.sub2">Credibilidad internacional · acceso financiero global · protección estructural</div>
+      </div>
+      <div class="hv-arrow">↓</div>
+      <div class="hv-card">
+        <div class="tag" data-i18n="hv.tag3">Resultado</div>
+        <div class="title" data-i18n="hv.title3">Dos ejes de valor</div>
+        <div class="sub" data-i18n="hv.sub3">Venta global de productos y servicios + resguardo y administración de activos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="wrap trust-inner">
+    <div class="trust-item">🏛 <span data-i18n="trust.1">Constituida en Florida, EE.UU.</span></div>
+    <div class="trust-item">🌎 <span data-i18n="trust.2">Clientes en Colombia y LATAM</span></div>
+    <div class="trust-item">🔒 <span data-i18n="trust.3">Proceso KYC/AML en cada etapa</span></div>
+    <div class="trust-item">✅ <span data-i18n="trust.4">Servicio en español e inglés</span></div>
+    <div class="trust-item">📄 <span data-i18n="trust.5">Dossier de cumplimiento incluido</span></div>
+  </div>
+</div>
+
+<!-- EJES -->
+<section id="ejes" class="ejes">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="ejes.eyebrow">Qué hacemos</div>
+      <h2 data-i18n="ejes.h2">Una empresa en EE.UU. sirve para dos cosas — y nosotros dominamos las dos</h2>
+      <p style="margin-top:12px;" data-i18n="ejes.p">La mayoría de asesores conoce solo una cara. VCW le entrega una estructura que opera y protege al mismo tiempo.</p>
+    </div>
+    <div class="ejes-grid reveal">
+      <div class="eje">
+        <span class="eje-badge comercial" data-i18n="eje.badge1">Eje comercial</span>
+        <div class="eje-icon">🏪</div>
+        <h3 data-i18n="eje.h1">Venda y opere globalmente</h3>
+        <p data-i18n="eje.p1">Una entidad en EE.UU. abre puertas que su empresa local no puede abrir: clientes internacionales, pasarelas de pago globales, contratos corporativos y presencia institucional.</p>
+        <ul>
+          <li data-i18n="eje.li1a">Facturación en USD hacia clientes en cualquier país</li>
+          <li data-i18n="eje.li1b">Acceso a Stripe, PayPal Business, Mercury, Wise Business</li>
+          <li data-i18n="eje.li1c">Contratos de mayor credibilidad con empresas internacionales</li>
+          <li data-i18n="eje.li1d">E-commerce y servicios digitales sin restricciones geográficas</li>
+          <li data-i18n="eje.li1e">Expansión a mercados regulados: software, fintech, salud digital</li>
+          <li data-i18n="eje.li1f">Reducción de fricciones en exportación de servicios LATAM → mundo</li>
+        </ul>
+      </div>
+      <div class="eje">
+        <span class="eje-badge patrimonial" data-i18n="eje.badge2">Eje patrimonial</span>
+        <div class="eje-icon">🏛</div>
+        <h3 data-i18n="eje.h2">Proteja y administre su patrimonio</h3>
+        <p data-i18n="eje.p2">La inestabilidad regulatoria, la devaluación y la baja privacidad erosionan el patrimonio en LATAM. Una estructura en EE.UU. lo resguarda bajo el sistema legal más sólido del mundo.</p>
+        <ul>
+          <li data-i18n="eje.li2a">Separación jurídica entre activos personales y empresariales</li>
+          <li data-i18n="eje.li2b">Holding de bienes raíces, valores e inversiones fuera de LATAM</li>
+          <li data-i18n="eje.li2c">Protección frente a cambios normativos y controles de capital</li>
+          <li data-i18n="eje.li2d">Planeación patrimonial y sucesoria con estructura holding</li>
+          <li data-i18n="eje.li2e">Privacidad legal de la composición accionaria</li>
+          <li data-i18n="eje.li2f">Acceso a brokers de valores y custodia de criptoactivos regulada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS COMERCIALES -->
+<section id="comercial" class="comercial-bg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="com.eyebrow">Operación comercial</div>
+      <h2 data-i18n="com.h2">Por qué vender desde una entidad americana cambia todo</h2>
+      <p style="margin-top:12px;" data-i18n="com.p">Una empresa en Colombia o México puede ser excelente — pero una LLC o C-Corp en EE.UU. da acceso a un ecosistema que simplemente no existe en LATAM.</p>
+    </div>
+    <div class="ben-grid reveal">
+      <div class="ben-card"><div class="icon">🌐</div><h3 data-i18n="ben.h1">Credibilidad internacional</h3><p data-i18n="ben.p1">Los clientes y aliados corporativos en EE.UU., Europa y Asia confían más en una contraparte con EIN y dirección en Estados Unidos.</p></div>
+      <div class="ben-card"><div class="icon">💳</div><h3 data-i18n="ben.h2">Pasarelas de pago globales</h3><p data-i18n="ben.p2">Stripe, PayPal Business, Square y las principales pasarelas requieren una entidad en EE.UU. para procesar pagos internacionales sin restricciones.</p></div>
+      <div class="ben-card"><div class="icon">🏦</div><h3 data-i18n="ben.h3">Cuenta bancaria corporativa USD</h3><p data-i18n="ben.p3">Mercury, Relay, Brex y bancos tradicionales. Reciba y envíe pagos en USD sin las fricciones del sistema bancario latinoamericano.</p></div>
+      <div class="ben-card"><div class="icon">📦</div><h3 data-i18n="ben.h4">Amazon, Shopify y marketplaces</h3><p data-i18n="ben.p4">Amazon Seller, Shopify Payments y los principales marketplaces globales priorizan vendedores con entidad registrada en EE.UU.</p></div>
+      <div class="ben-card"><div class="icon">🤝</div><h3 data-i18n="ben.h5">Contratos B2B sin barreras</h3><p data-i18n="ben.p5">Proveedores y socios internacionales prefieren contratos bajo ley americana. Reduce disputas y acelera el cierre de negocios.</p></div>
+      <div class="ben-card"><div class="icon">🚀</div><h3 data-i18n="ben.h6">Acceso a capital de riesgo</h3><p data-i18n="ben.p6">Los fondos de venture capital en EE.UU. invierten casi exclusivamente en Delaware C-Corps. La estructura correcta es la llave de entrada.</p></div>
+      <div class="ben-card"><div class="icon">💡</div><h3 data-i18n="ben.h7">Software y servicios SaaS</h3><p data-i18n="ben.p7">Empresas de tecnología y modelos de suscripción se escalan globalmente sin barreras cuando operan desde una entidad en EE.UU.</p></div>
+      <div class="ben-card"><div class="icon">📊</div><h3 data-i18n="ben.h8">Optimización fiscal legal</h3><p data-i18n="ben.p8">Las LLC con socios extranjeros tienen ventajas fiscales únicas bajo el código federal — sin impuesto federal si los ingresos no tienen fuente en EE.UU.</p></div>
+      <div class="ben-card"><div class="icon">🔄</div><h3 data-i18n="ben.h9">Escalabilidad sin fronteras</h3><p data-i18n="ben.p9">De un mercado local a clientes en 180 países — una entidad en EE.UU. es la plataforma de lanzamiento para crecer globalmente.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTRUCTURAS -->
+<section id="estructuras">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="str.eyebrow">Tipo de entidad</div>
+      <h2 data-i18n="str.h2">LLC vs. C-Corporation: la decisión correcta según su objetivo</h2>
+      <p style="margin-top:12px;" data-i18n="str.p">La estructura que elija determinará su carga fiscal, privacidad y acceso a capital. Nunca es igual para todos.</p>
+    </div>
+    <div class="comp-wrap reveal" style="margin-top:32px;">
+      <div class="comp-tabs">
+        <button class="comp-tab active" data-tab="llc" data-i18n="tab.llc">LLC — Sociedad de Responsabilidad Limitada</button>
+        <button class="comp-tab" data-tab="corp" data-i18n="tab.corp">C-Corporation</button>
+      </div>
+      <div class="comp-body">
+        <div class="comp-pane active" id="pane-llc">
+          <div class="comp-row"><div class="k" data-i18n="cr.tax">Tributación</div><div class="v" data-i18n="llc.tax">Transparencia fiscal ("pass-through"): la utilidad tributa a nivel del socio, no de la sociedad. Sin impuesto federal corporativo.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.foreign">Socios no residentes</div><div class="v" data-i18n="llc.foreign">Permitido. Un ciudadano colombiano o latinoamericano puede ser 100% propietario sin visa ni presencia física en EE.UU.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.privacy">Privacidad</div><div class="v" data-i18n="llc.privacy">Alta en Wyoming y New Mexico. Moderada en Florida y Delaware. Los socios no son datos públicos en la mayoría de estados.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.formalities">Formalidades</div><div class="v" data-i18n="llc.formalities">Bajas. No requiere junta directiva ni actas formales. Ideal para estructuras ágiles y de bajo costo de mantenimiento.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.bestfor">Ideal para</div><div class="v" data-i18n="llc.bestfor">Holding patrimonial, bienes raíces, servicios profesionales, e-commerce, inversiones, protección de activos.</div></div>
+          <div class="comp-fit" data-i18n="llc.fit">✓ Recomendada para la mayoría de clientes de LATAM que buscan operar y proteger su patrimonio sin levantar capital institucional.</div>
+        </div>
+        <div class="comp-pane" id="pane-corp">
+          <div class="comp-row"><div class="k" data-i18n="cr.tax">Tributación</div><div class="v" data-i18n="corp.tax">Impuesto corporativo federal (21%) más impuesto a dividendos del accionista. Doble tributación en distribuciones.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.foreign">Socios no residentes</div><div class="v" data-i18n="corp.foreign">Permitido. Los accionistas extranjeros pueden ser propietarios completos sin restricciones de residencia.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.privacy">Privacidad</div><div class="v" data-i18n="corp.privacy">Moderada. La lista de directores puede ser pública según el estado; accionistas generalmente no.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.formalities">Formalidades</div><div class="v" data-i18n="corp.formalities">Altas. Requiere junta directiva, accionistas, actas corporativas y registros formales anuales.</div></div>
+          <div class="comp-row"><div class="k" data-i18n="cr.bestfor">Ideal para</div><div class="v" data-i18n="corp.bestfor">Startups que buscan venture capital, estructuras con stock options o que planean salida a bolsa.</div></div>
+          <div class="comp-fit" data-i18n="corp.fit">✓ Recomendada cuando el objetivo es levantar capital institucional, emitir acciones a empleados o prepararse para una ronda de inversión.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:70px;">
+      <div class="eyebrow" data-i18n="state.eyebrow">Jurisdicción</div>
+      <h2 data-i18n="state.h2">¿En qué estado constituir?</h2>
+      <p style="margin-top:12px;" data-i18n="state.p">Cada estado tiene su propio régimen fiscal, nivel de privacidad y costo de mantenimiento. La elección importa.</p>
+    </div>
+    <div class="state-grid reveal">
+      <div class="state-card"><div class="flag" data-i18n="st1.flag">Capital de riesgo</div><h4>Delaware</h4><p data-i18n="st1.p">Estándar de facto para startups e inversión institucional. Marco legal corporativo predecible, preferido por fondos de VC.</p></div>
+      <div class="state-card"><div class="flag" data-i18n="st2.flag">Privacidad máxima</div><h4>Wyoming</h4><p data-i18n="st2.p">Sin impuesto estatal a la renta. Mayor privacidad de socios. Bajo costo de mantenimiento. Ideal para estructuras patrimoniales.</p></div>
+      <div class="state-card"><div class="flag" data-i18n="st3.flag">Cercanía LATAM</div><h4>Florida</h4><p data-i18n="st3.p">Hub natural para negocios con Latinoamérica. Sin impuesto estatal a la renta personal. Mayor apertura bancaria remota para extranjeros.</p></div>
+      <div class="state-card"><div class="flag" data-i18n="st4.flag">Costo mínimo</div><h4>New Mexico</h4><p data-i18n="st4.p">Los costos de formación y mantenimiento más bajos del país. Privacidad alta. Ideal para estructuras de arranque.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso" class="proceso-bg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="proc.eyebrow">Metodología</div>
+      <h2 data-i18n="proc.h2">Cinco pasos de principio a fin</h2>
+      <p data-i18n="proc.p">Desde el diagnóstico inicial hasta el cumplimiento continuo, acompañamos cada etapa.</p>
+    </div>
+    <div class="steps-grid reveal">
+      <div class="s-step"><div class="s-num">1</div><h3 data-i18n="step1.h">Diagnóstico</h3><p data-i18n="step1.p">Entendemos su objetivo — comercial, patrimonial o ambos — y el perfil de riesgo.</p></div>
+      <div class="s-step"><div class="s-num">2</div><h3 data-i18n="step2.h">Diseño</h3><p data-i18n="step2.p">Definimos entidad, estado, estructura de socios y capas de protección.</p></div>
+      <div class="s-step"><div class="s-num">3</div><h3 data-i18n="step3.h">Constitución</h3><p data-i18n="step3.p">Incorporación legal, agente registrado, Operating Agreement y EIN.</p></div>
+      <div class="s-step"><div class="s-num">4</div><h3 data-i18n="step4.h">Banca</h3><p data-i18n="step4.p">Acompañamiento para cuenta corporativa, broker de valores y/o exchange regulado.</p></div>
+      <div class="s-step"><div class="s-num">5</div><h3 data-i18n="step5.h">Cumplimiento</h3><p data-i18n="step5.p">Dossier KYC/AML, renovaciones anuales y soporte regulatorio continuo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREGABLES -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="ent.eyebrow">Sus entregables</div>
+      <h2 data-i18n="ent.h2">Lo que recibe al finalizar</h2>
+      <p style="margin-top:12px;" data-i18n="ent.p">Cinco documentos y accesos concretos que constituyen su estructura completa.</p>
+    </div>
+    <div class="ent-grid reveal">
+      <div class="ent-card"><div class="num">01</div><h3 data-i18n="e1.h">Operating Agreement</h3><p data-i18n="e1.p">Contrato que define derechos, responsabilidades y gobernanza de la LLC.</p></div>
+      <div class="ent-card"><div class="num">02</div><h3 data-i18n="e2.h">Certificate of Formation</h3><p data-i18n="e2.p">Documento oficial del estado que acredita la existencia legal de la sociedad.</p></div>
+      <div class="ent-card"><div class="num">03</div><h3 data-i18n="e3.h">EIN (Tax ID)</h3><p data-i18n="e3.p">Número de identificación fiscal federal, indispensable para bancaria, contratos e IRS.</p></div>
+      <div class="ent-card"><div class="num">04</div><h3 data-i18n="e4.h">Cuenta bancaria / fintech</h3><p data-i18n="e4.p">Cuenta corporativa activa en banco o plataforma fintech para operar en USD.</p></div>
+      <div class="ent-card"><div class="num">05</div><h3 data-i18n="e5.h">Dossier KYC/AML/DD</h3><p data-i18n="e5.p">Informe de cumplimiento que fortalece su posición ante bancos, brokers e instituciones.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BANCA -->
+<section id="banca" class="bank-bg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="bank.eyebrow">Acceso financiero</div>
+      <h2 data-i18n="bank.h2">Banca, valores y criptoactivos</h2>
+      <p style="margin-top:12px;" data-i18n="bank.p">Una entidad en EE.UU. abre el acceso al sistema financiero internacional — tanto tradicional como digital.</p>
+    </div>
+    <div class="bank-grid reveal">
+      <div class="bank-col">
+        <h3 data-i18n="bank.trad">🏛 Sistema financiero tradicional</h3>
+        <ul>
+          <li data-i18n="bank.t1">Mercury, Relay, Brex: cuentas corporativas multidivisa sin visita física</li>
+          <li data-i18n="bank.t2">Brokers de valores regulados por FINRA/SEC: acceso a bolsas de EE.UU.</li>
+          <li data-i18n="bank.t3">Procesadores de pago: Stripe, PayPal Business, Square</li>
+          <li data-i18n="bank.t4">Tarjetas corporativas para gastos operativos globales</li>
+          <li data-i18n="bank.t5">Líneas de crédito corporativo y productos de tesorería</li>
+        </ul>
+      </div>
+      <div class="bank-col">
+        <h3 data-i18n="bank.crypto">₿ Activos digitales y criptomonedas</h3>
+        <ul>
+          <li data-i18n="bank.c1">Cuentas corporativas en exchanges regulados: Coinbase Institutional, Kraken Pro</li>
+          <li data-i18n="bank.c2">Custodia institucional de criptoactivos con respaldo regulatorio</li>
+          <li data-i18n="bank.c3">Estructuración de operaciones compatible con AML/KYC</li>
+          <li data-i18n="bank.c4">Trazabilidad de wallet y análisis on-chain de origen de fondos</li>
+          <li data-i18n="bank.c5">Acceso a productos DeFi institucionales desde estructura legal</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KYC/AML -->
+<section id="cumplimiento" class="kyc-bg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="kyc.eyebrow">Cumplimiento</div>
+      <h2 data-i18n="kyc.h2">KYC, AML y Due Diligence en cada etapa</h2>
+      <p style="margin-top:12px;" data-i18n="kyc.p">El proceso de cumplimiento es un activo. Un dossier bien construido abre puertas en bancos, brokers e instituciones internacionales.</p>
+    </div>
+    <div class="kyc-grid reveal">
+      <div class="kyc-card"><div class="ic">🪪</div><h3 data-i18n="kyc.h1">Verificación de identidad</h3><p data-i18n="kyc.p1">Validación de identidad y beneficiarios finales (UBO), conforme a estándares FATF.</p></div>
+      <div class="kyc-card"><div class="ic">🔍</div><h3 data-i18n="kyc.h2">Origen de fondos</h3><p data-i18n="kyc.p2">Análisis y documentación del origen lícito de los recursos que ingresarán a la estructura.</p></div>
+      <div class="kyc-card"><div class="ic">🌐</div><h3 data-i18n="kyc.h3">Listas internacionales</h3><p data-i18n="kyc.p3">Verificación en OFAC SDN, Lista Consolidada ONU, Mapa de Sanciones UE y bases de datos PEP.</p></div>
+      <div class="kyc-card"><div class="ic">₿</div><h3 data-i18n="kyc.h4">Trazabilidad cripto</h3><p data-i18n="kyc.p4">Análisis de wallet y hashes para confirmar origen limpio de fondos digitales.</p></div>
+      <div class="kyc-card"><div class="ic">📊</div><h3 data-i18n="kyc.h5">Clasificación de riesgo</h3><p data-i18n="kyc.p5">Perfil de riesgo documentado (Bajo / Medio / Alto) con principio de cuatro ojos.</p></div>
+      <div class="kyc-card"><div class="ic">🗂</div><h3 data-i18n="kyc.h6">Dossier de cumplimiento</h3><p data-i18n="kyc.p6">Informe consolidado que el cliente presenta ante bancos e instituciones como respaldo de debida diligencia.</p></div>
+      <div class="kyc-card"><div class="ic">🔄</div><h3 data-i18n="kyc.h7">Monitoreo continuo</h3><p data-i18n="kyc.p7">Seguimiento de alertas, cambios regulatorios y re-evaluación periódica del perfil de riesgo.</p></div>
+      <div class="kyc-card"><div class="ic">📋</div><h3 data-i18n="kyc.h8">Documentación defensible</h3><p data-i18n="kyc.p8">Cada paso queda registrado en un expediente estructurado, auditable y reproducible ante cualquier autoridad.</p></div>
+    </div>
+    <div class="callout reveal">
+      <div class="ic">ⓘ</div>
+      <div>
+        <h4 data-i18n="reg.h">Marco regulatorio vigente — julio 2026</h4>
+        <p data-i18n="reg.p"><strong>BOI / CTA (FinCEN):</strong> bajo la regla interina de 2025, las entidades constituidas en EE.UU. están temporalmente exentas de reportar beneficiarios finales a FinCEN. La obligación aplica actualmente solo a entidades extranjeras registradas para operar en EE.UU. El marco está sujeto a cambios.<br><br><strong>Obligaciones fiscales federales:</strong> EIN obligatorio. LLC con único socio extranjero debe presentar declaraciones informativas anuales ante el IRS (Formularios 5472 + 1120). Los impuestos estatales varían según la jurisdicción elegida.<br><br>Este contenido es de carácter orientativo y no constituye asesoría legal o fiscal definitiva.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCS -->
+<section class="docs-bg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="docs.eyebrow">Recursos de VCW</div>
+      <h2 data-i18n="docs.h2">Documentación especializada a su disposición</h2>
+      <p data-i18n="docs.p">Cada documento fue desarrollado para que nuestros clientes lleguen preparados e informados a cada etapa del proceso.</p>
+    </div>
+    <div class="docs-grid reveal">
+      <div class="doc-card"><div class="tag" data-i18n="doc1.tag">Guía principal</div><h4 data-i18n="doc1.h">Guía de Sociedades en Florida</h4><p data-i18n="doc1.p">LLC vs. C-Corp, comparación de estados, tratamiento fiscal, tiers de banca y requisitos KYC/AML por perfil de cliente.</p></div>
+      <div class="doc-card"><div class="tag" data-i18n="doc2.tag">Sensibilización</div><h4 data-i18n="doc2.h">Activos en EE.UU.: ¿Por qué ahora?</h4><p data-i18n="doc2.p">Documento sobre la concentración de riesgo patrimonial en LATAM y las ventajas de diversificar hacia EE.UU.</p></div>
+      <div class="doc-card"><div class="tag" data-i18n="doc3.tag">Entregables</div><h4 data-i18n="doc3.h">Guía de Entregables LLC Florida</h4><p data-i18n="doc3.p">Los cinco entregables explicados: Operating Agreement, Certificate of Formation, EIN, cuenta bancaria y dossier KYC/AML.</p></div>
+      <div class="doc-card"><div class="tag" data-i18n="doc4.tag">Cumplimiento</div><h4 data-i18n="doc4.h">Guía KYC/AML/DD para Clientes</h4><p data-i18n="doc4.p">El proceso de debida diligencia, qué documentos se necesitan y cómo se usa el dossier resultante ante instituciones.</p></div>
+      <div class="doc-card"><div class="tag" data-i18n="doc5.tag">Privacidad</div><h4 data-i18n="doc5.h">Control de Datos y Activos</h4><p data-i18n="doc5.p">Marco de privacidad, capas de protección, límites de divulgación compelida y diseño de control por perfil de cliente.</p></div>
+      <div class="doc-card"><div class="tag" data-i18n="doc6.tag">Gobierno corporativo</div><h4 data-i18n="doc6.h">Operating Agreement: Valor Estratégico</h4><p data-i18n="doc6.p">Por qué el Operating Agreement es mucho más que un requisito: derechos, protecciones y señales de cumplimiento.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFF -->
+<section class="diff-bg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="diff.eyebrow">Por qué VCW</div>
+      <h2 data-i18n="diff.h2">Más riguroso que las plataformas. Más accesible que las firmas élite.</h2>
+      <p style="margin-top:12px;" data-i18n="diff.p">VCW ocupa un espacio deliberado: más estructurado que un agente de formación genérico, más personalizado que Stripe Atlas o doola, más accesible que una firma de ultra-HNW.</p>
+    </div>
+    <div class="reveal" style="max-width:740px;margin-top:36px;">
+      <div class="diff-row-item"><div class="diff-ic">🔭</div><div><h4 data-i18n="dif1.h">Cuatro lentes simultáneos</h4><p data-i18n="dif1.p">Derecho tributario y comercial, acceso bancario y cripto, defensibilidad KYC/AML, y control de datos. Nunca de forma aislada.</p></div></div>
+      <div class="diff-row-item"><div class="diff-ic">🤝</div><div><h4 data-i18n="dif2.h">Asesoría personalizada bilingüe</h4><p data-i18n="dif2.p">Atendemos en español a nuestros clientes y en inglés ante las instituciones financieras de EE.UU. — el idioma correcto en cada contexto.</p></div></div>
+      <div class="diff-row-item"><div class="diff-ic">📋</div><div><h4 data-i18n="dif3.h">El dossier KYC es un activo</h4><p data-i18n="dif3.p">El informe de cumplimiento que producimos fortalece la posición del cliente ante bancos, brokers e instituciones — no es un trámite, es un entregable de valor.</p></div></div>
+      <div class="diff-row-item"><div class="diff-ic">🏦</div><div><h4 data-i18n="dif4.h">Red de acceso financiero real</h4><p data-i18n="dif4.p">Conocemos los requisitos concretos de Mercury, Brex, Coinbase Institutional y otros para clientes no residentes. No le decimos que abra una cuenta — le ayudamos a abrirla.</p></div></div>
+      <div class="diff-row-item"><div class="diff-ic">🔄</div><div><h4 data-i18n="dif5.h">Cumplimiento continuo</h4><p data-i18n="dif5.p">La mayoría de agentes terminan al entregar los documentos. Nosotros continuamos: renovaciones, cambios regulatorios, re-evaluaciones y soporte permanente.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contacto" class="cta-final">
+  <div class="wrap">
+    <div class="eyebrow" data-i18n="cta.eyebrow">Empecemos</div>
+    <h2 data-i18n="cta.h2">Su empresa en EE.UU. puede estar activa en semanas</h2>
+    <p data-i18n="cta.p">Una consulta inicial sin compromiso. Definamos juntos si el objetivo es operar, proteger o ambos — y qué estructura tiene sentido para su caso.</p>
+    <div class="cta-actions">
+      <a href="mailto:info@virtualcloudworld.com?subject=Consulta%20inicial" class="btn btn-gold" data-i18n="cta.btn1">Agendar consulta</a>
+      <a href="cuestionario.html" class="btn btn-ghost" data-i18n="cta.btn2">Diligenciar cuestionario</a>
+    </div>
+    <div class="contact-note"><a href="mailto:info@virtualcloudworld.com">info@virtualcloudworld.com</a> · www.virtualcloudworld.com</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="logo" style="color:#fff;">Virtual Cloud World <em style="color:var(--gold-soft);border-color:var(--gold-soft);">LLC</em></div>
+      <nav class="foot-nav">
+        <a href="#ejes" data-i18n="nav.what">Qué hacemos</a>
+        <a href="#comercial" data-i18n="nav.commercial">Operación comercial</a>
+        <a href="#estructuras" data-i18n="nav.structures">Estructuras</a>
+        <a href="#proceso" data-i18n="nav.process">Proceso</a>
+        <a href="#cumplimiento" data-i18n="nav.compliance">Cumplimiento</a>
+        <a href="cuestionario.html" data-i18n="nav.questionnaire">Cuestionario</a>
+      </nav>
+    </div>
+    <div class="legal" data-i18n="footer.legal">Este sitio tiene fines informativos generales y no constituye asesoría legal, fiscal o financiera definitiva. Cada estructura societaria debe evaluarse con el apoyo de profesionales especializados, conforme a la normativa vigente de Estados Unidos y del país de residencia del cliente.<br><br>© 2026 Virtual Cloud World LLC. Florida, Estados Unidos. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<script>
+const T = {
+  es: {
+    "nav.what":"Qué hacemos","nav.commercial":"Operación comercial","nav.structures":"Estructuras","nav.process":"Proceso","nav.compliance":"Cumplimiento","nav.questionnaire":"Cuestionario","nav.cta":"Agendar consulta",
+    "hero.eyebrow":"Sociedades en EE.UU. para LATAM",
+    "hero.h1":"Opere, venda y proteja su patrimonio desde una <em>entidad americana</em>",
+    "hero.lead":"Constitución, representación y cumplimiento de sociedades en Estados Unidos para personas naturales y jurídicas de Colombia y Latinoamérica.",
+    "hero.btn1":"Agendar consulta","hero.btn2":"Iniciar cuestionario",
+    "pill.1":"Operación comercial global","pill.2":"Protección patrimonial","pill.3":"Banca y cripto","pill.4":"KYC · AML · DD","pill.5":"Eficiencia fiscal",
+    "hv.tag1":"Su situación actual","hv.title1":"Empresa o patrimonio en LATAM","hv.sub1":"Expuesto a volatilidad, barreras bancarias y mercado local limitado",
+    "hv.tag2":"Lo que construimos juntos","hv.title2":"LLC o C-Corp en EE.UU.","hv.sub2":"Credibilidad internacional · acceso financiero global · protección estructural",
+    "hv.tag3":"Resultado","hv.title3":"Dos ejes de valor","hv.sub3":"Venta global de productos y servicios + resguardo y administración de activos",
+    "trust.1":"Constituida en Florida, EE.UU.","trust.2":"Clientes en Colombia y LATAM","trust.3":"Proceso KYC/AML en cada etapa","trust.4":"Servicio en español e inglés","trust.5":"Dossier de cumplimiento incluido",
+    "ejes.eyebrow":"Qué hacemos","ejes.h2":"Una empresa en EE.UU. sirve para dos cosas — y nosotros dominamos las dos","ejes.p":"La mayoría de asesores conoce solo una cara. VCW le entrega una estructura que opera y protege al mismo tiempo.",
+    "eje.badge1":"Eje comercial","eje.h1":"Venda y opere globalmente","eje.p1":"Una entidad en EE.UU. abre puertas que su empresa local no puede abrir: clientes internacionales, pasarelas de pago globales, contratos corporativos y presencia institucional.",
+    "eje.li1a":"Facturación en USD hacia clientes en cualquier país","eje.li1b":"Acceso a Stripe, PayPal Business, Mercury, Wise Business","eje.li1c":"Contratos de mayor credibilidad con empresas internacionales","eje.li1d":"E-commerce y servicios digitales sin restricciones geográficas","eje.li1e":"Expansión a mercados regulados: software, fintech, salud digital","eje.li1f":"Reducción de fricciones en exportación de servicios LATAM → mundo",
+    "eje.badge2":"Eje patrimonial","eje.h2":"Proteja y administre su patrimonio","eje.p2":"La inestabilidad regulatoria, la devaluación y la baja privacidad erosionan el patrimonio en LATAM. Una estructura en EE.UU. lo resguarda bajo el sistema legal más sólido del mundo.",
+    "eje.li2a":"Separación jurídica entre activos personales y empresariales","eje.li2b":"Holding de bienes raíces, valores e inversiones fuera de LATAM","eje.li2c":"Protección frente a cambios normativos y controles de capital","eje.li2d":"Planeación patrimonial y sucesoria con estructura holding","eje.li2e":"Privacidad legal de la composición accionaria","eje.li2f":"Acceso a brokers de valores y custodia de criptoactivos regulada",
+    "com.eyebrow":"Operación comercial","com.h2":"Por qué vender desde una entidad americana cambia todo","com.p":"Una empresa en Colombia o México puede ser excelente — pero una LLC o C-Corp en EE.UU. da acceso a un ecosistema que simplemente no existe en LATAM.",
+    "ben.h1":"Credibilidad internacional","ben.p1":"Los clientes y aliados corporativos en EE.UU., Europa y Asia confían más en una contraparte con EIN y dirección en Estados Unidos.",
+    "ben.h2":"Pasarelas de pago globales","ben.p2":"Stripe, PayPal Business, Square y las principales pasarelas requieren una entidad en EE.UU. para procesar pagos sin restricciones.",
+    "ben.h3":"Cuenta bancaria corporativa USD","ben.p3":"Mercury, Relay, Brex y bancos tradicionales. Reciba y envíe pagos en USD sin las fricciones del sistema bancario latinoamericano.",
+    "ben.h4":"Amazon, Shopify y marketplaces","ben.p4":"Amazon Seller, Shopify Payments y los principales marketplaces globales priorizan vendedores con entidad registrada en EE.UU.",
+    "ben.h5":"Contratos B2B sin barreras","ben.p5":"Proveedores y socios internacionales prefieren contratos bajo ley americana. Reduce disputas y acelera el cierre de negocios.",
+    "ben.h6":"Acceso a capital de riesgo","ben.p6":"Los fondos de venture capital en EE.UU. invierten casi exclusivamente en Delaware C-Corps. La estructura correcta es la llave de entrada.",
+    "ben.h7":"Software y servicios SaaS","ben.p7":"Empresas de tecnología y modelos de suscripción se escalan globalmente sin barreras cuando operan desde una entidad en EE.UU.",
+    "ben.h8":"Optimización fiscal legal","ben.p8":"Las LLC con socios extranjeros tienen ventajas fiscales únicas bajo el código federal — sin impuesto federal si los ingresos no tienen fuente en EE.UU.",
+    "ben.h9":"Escalabilidad sin fronteras","ben.p9":"De un mercado local a clientes en 180 países — una entidad en EE.UU. es la plataforma de lanzamiento para crecer globalmente.",
+    "str.eyebrow":"Tipo de entidad","str.h2":"LLC vs. C-Corporation: la decisión correcta según su objetivo","str.p":"La estructura que elija determinará su carga fiscal, privacidad y acceso a capital. Nunca es igual para todos.",
+    "tab.llc":"LLC — Sociedad de Responsabilidad Limitada","tab.corp":"C-Corporation",
+    "cr.tax":"Tributación","cr.foreign":"Socios no residentes","cr.privacy":"Privacidad","cr.formalities":"Formalidades","cr.bestfor":"Ideal para",
+    "llc.tax":"Transparencia fiscal (pass-through): la utilidad tributa a nivel del socio, no de la sociedad. Sin impuesto federal corporativo.",
+    "llc.foreign":"Permitido. Un ciudadano colombiano o latinoamericano puede ser 100% propietario sin visa ni presencia física en EE.UU.",
+    "llc.privacy":"Alta en Wyoming y New Mexico. Moderada en Florida y Delaware. Los socios no son datos públicos en la mayoría de estados.",
+    "llc.formalities":"Bajas. No requiere junta directiva ni actas formales. Ideal para estructuras ágiles y de bajo costo de mantenimiento.",
+    "llc.bestfor":"Holding patrimonial, bienes raíces, servicios profesionales, e-commerce, inversiones, protección de activos.",
+    "llc.fit":"✓ Recomendada para la mayoría de clientes de LATAM que buscan operar y proteger su patrimonio sin levantar capital institucional.",
+    "corp.tax":"Impuesto corporativo federal (21%) más impuesto a dividendos del accionista. Doble tributación en distribuciones.",
+    "corp.foreign":"Permitido. Los accionistas extranjeros pueden ser propietarios completos sin restricciones de residencia.",
+    "corp.privacy":"Moderada. La lista de directores puede ser pública según el estado; accionistas generalmente no.",
+    "corp.formalities":"Altas. Requiere junta directiva, accionistas, actas corporativas y registros formales anuales.",
+    "corp.bestfor":"Startups que buscan venture capital, estructuras con stock options o que planean salida a bolsa.",
+    "corp.fit":"✓ Recomendada cuando el objetivo es levantar capital institucional, emitir acciones a empleados o prepararse para una ronda de inversión.",
+    "state.eyebrow":"Jurisdicción","state.h2":"¿En qué estado constituir?","state.p":"Cada estado tiene su propio régimen fiscal, nivel de privacidad y costo de mantenimiento. La elección importa.",
+    "st1.flag":"Capital de riesgo","st1.p":"Estándar de facto para startups e inversión institucional. Marco legal corporativo predecible, preferido por fondos de VC.",
+    "st2.flag":"Privacidad máxima","st2.p":"Sin impuesto estatal a la renta. Mayor privacidad de socios. Bajo costo de mantenimiento. Ideal para estructuras patrimoniales.",
+    "st3.flag":"Cercanía LATAM","st3.p":"Hub natural para negocios con Latinoamérica. Sin impuesto estatal a la renta personal. Mayor apertura bancaria remota.",
+    "st4.flag":"Costo mínimo","st4.p":"Los costos de formación y mantenimiento más bajos del país. Privacidad alta. Ideal para estructuras de arranque.",
+    "proc.eyebrow":"Metodología","proc.h2":"Cinco pasos de principio a fin","proc.p":"Desde el diagnóstico inicial hasta el cumplimiento continuo, acompañamos cada etapa.",
+    "step1.h":"Diagnóstico","step1.p":"Entendemos su objetivo — comercial, patrimonial o ambos — y el perfil de riesgo.",
+    "step2.h":"Diseño","step2.p":"Definimos entidad, estado, estructura de socios y capas de protección.",
+    "step3.h":"Constitución","step3.p":"Incorporación legal, agente registrado, Operating Agreement y EIN.",
+    "step4.h":"Banca","step4.p":"Acompañamiento para cuenta corporativa, broker de valores y/o exchange regulado.",
+    "step5.h":"Cumplimiento","step5.p":"Dossier KYC/AML, renovaciones anuales y soporte regulatorio continuo.",
+    "ent.eyebrow":"Sus entregables","ent.h2":"Lo que recibe al finalizar","ent.p":"Cinco documentos y accesos concretos que constituyen su estructura completa.",
+    "e1.h":"Operating Agreement","e1.p":"Contrato que define derechos, responsabilidades y gobernanza de la LLC.",
+    "e2.h":"Certificate of Formation","e2.p":"Documento oficial del estado que acredita la existencia legal de la sociedad.",
+    "e3.h":"EIN (Tax ID)","e3.p":"Número de identificación fiscal federal, indispensable para bancaria, contratos e IRS.",
+    "e4.h":"Cuenta bancaria / fintech","e4.p":"Cuenta corporativa activa en banco o plataforma fintech para operar en USD.",
+    "e5.h":"Dossier KYC/AML/DD","e5.p":"Informe de cumplimiento que fortalece su posición ante bancos, brokers e instituciones.",
+    "bank.eyebrow":"Acceso financiero","bank.h2":"Banca, valores y criptoactivos","bank.p":"Una entidad en EE.UU. abre el acceso al sistema financiero internacional — tanto tradicional como digital.",
+    "bank.trad":"🏛 Sistema financiero tradicional",
+    "bank.t1":"Mercury, Relay, Brex: cuentas corporativas multidivisa sin visita física","bank.t2":"Brokers de valores regulados por FINRA/SEC: acceso a bolsas de EE.UU.","bank.t3":"Procesadores de pago: Stripe, PayPal Business, Square","bank.t4":"Tarjetas corporativas para gastos operativos globales","bank.t5":"Líneas de crédito corporativo y productos de tesorería",
+    "bank.crypto":"₿ Activos digitales y criptomonedas",
+    "bank.c1":"Cuentas corporativas en exchanges regulados: Coinbase Institutional, Kraken Pro","bank.c2":"Custodia institucional de criptoactivos con respaldo regulatorio","bank.c3":"Estructuración de operaciones compatible con AML/KYC","bank.c4":"Trazabilidad de wallet y análisis on-chain de origen de fondos","bank.c5":"Acceso a productos DeFi institucionales desde estructura legal",
+    "kyc.eyebrow":"Cumplimiento","kyc.h2":"KYC, AML y Due Diligence en cada etapa","kyc.p":"El proceso de cumplimiento es un activo. Un dossier bien construido abre puertas en bancos, brokers e instituciones internacionales.",
+    "kyc.h1":"Verificación de identidad","kyc.p1":"Validación de identidad y beneficiarios finales (UBO), conforme a estándares FATF.",
+    "kyc.h2":"Origen de fondos","kyc.p2":"Análisis y documentación del origen lícito de los recursos.",
+    "kyc.h3":"Listas internacionales","kyc.p3":"Verificación en OFAC SDN, Lista Consolidada ONU, Mapa de Sanciones UE y bases PEP.",
+    "kyc.h4":"Trazabilidad cripto","kyc.p4":"Análisis de wallet y hashes para confirmar origen limpio de fondos digitales.",
+    "kyc.h5":"Clasificación de riesgo","kyc.p5":"Perfil de riesgo documentado (Bajo / Medio / Alto) con principio de cuatro ojos.",
+    "kyc.h6":"Dossier de cumplimiento","kyc.p6":"Informe consolidado que el cliente presenta ante bancos e instituciones.",
+    "kyc.h7":"Monitoreo continuo","kyc.p7":"Seguimiento de alertas, cambios regulatorios y re-evaluación del perfil de riesgo.",
+    "kyc.h8":"Documentación defensible","kyc.p8":"Expediente estructurado, auditable y reproducible ante cualquier autoridad.",
+    "reg.h":"Marco regulatorio vigente — julio 2026",
+    "reg.p":"<strong>BOI / CTA (FinCEN):</strong> bajo la regla interina de 2025, las entidades constituidas en EE.UU. están temporalmente exentas de reportar beneficiarios finales a FinCEN. El marco está sujeto a cambios.<br><br><strong>Obligaciones fiscales federales:</strong> EIN obligatorio. LLC con único socio extranjero debe presentar Formularios 5472 + 1120 ante el IRS. Los impuestos estatales varían según la jurisdicción.<br><br>Este contenido es de carácter orientativo y no constituye asesoría legal o fiscal definitiva.",
+    "docs.eyebrow":"Recursos de VCW","docs.h2":"Documentación especializada a su disposición","docs.p":"Cada documento fue desarrollado para que nuestros clientes lleguen preparados e informados a cada etapa del proceso.",
+    "doc1.tag":"Guía principal","doc1.h":"Guía de Sociedades en Florida","doc1.p":"LLC vs. C-Corp, comparación de estados, tratamiento fiscal, tiers de banca y requisitos KYC/AML por perfil de cliente.",
+    "doc2.tag":"Sensibilización","doc2.h":"Activos en EE.UU.: ¿Por qué ahora?","doc2.p":"Documento sobre la concentración de riesgo patrimonial en LATAM y las ventajas de diversificar hacia EE.UU.",
+    "doc3.tag":"Entregables","doc3.h":"Guía de Entregables LLC Florida","doc3.p":"Los cinco entregables explicados: Operating Agreement, Certificate of Formation, EIN, cuenta bancaria y dossier KYC/AML.",
+    "doc4.tag":"Cumplimiento","doc4.h":"Guía KYC/AML/DD para Clientes","doc4.p":"El proceso de debida diligencia, qué documentos se necesitan y cómo usar el dossier ante instituciones.",
+    "doc5.tag":"Privacidad","doc5.h":"Control de Datos y Activos","doc5.p":"Marco de privacidad, capas de protección, límites de divulgación compelida y diseño de control por perfil de cliente.",
+    "doc6.tag":"Gobierno corporativo","doc6.h":"Operating Agreement: Valor Estratégico","doc6.p":"Por qué el Operating Agreement es mucho más que un requisito: derechos, protecciones y señales de cumplimiento.",
+    "diff.eyebrow":"Por qué VCW","diff.h2":"Más riguroso que las plataformas. Más accesible que las firmas élite.","diff.p":"VCW ocupa un espacio deliberado: más estructurado que un agente de formación genérico, más personalizado que Stripe Atlas o doola, más accesible que una firma de ultra-HNW.",
+    "dif1.h":"Cuatro lentes simultáneos","dif1.p":"Derecho tributario y comercial, acceso bancario y cripto, defensibilidad KYC/AML, y control de datos. Nunca de forma aislada.",
+    "dif2.h":"Asesoría personalizada bilingüe","dif2.p":"Atendemos en español a nuestros clientes y en inglés ante las instituciones financieras de EE.UU. — el idioma correcto en cada contexto.",
+    "dif3.h":"El dossier KYC es un activo","dif3.p":"El informe de cumplimiento fortalece la posición del cliente ante bancos, brokers e instituciones — no es un trámite, es un entregable de valor.",
+    "dif4.h":"Red de acceso financiero real","dif4.p":"Conocemos los requisitos de Mercury, Brex, Coinbase Institutional y otros para clientes no residentes. No le decimos que abra una cuenta — le ayudamos a abrirla.",
+    "dif5.h":"Cumplimiento continuo","dif5.p":"La mayoría de agentes terminan al entregar los documentos. Nosotros continuamos: renovaciones, cambios regulatorios, re-evaluaciones y soporte permanente.",
+    "cta.eyebrow":"Empecemos","cta.h2":"Su empresa en EE.UU. puede estar activa en semanas","cta.p":"Una consulta inicial sin compromiso. Definamos juntos si el objetivo es operar, proteger o ambos — y qué estructura tiene sentido para su caso.",
+    "cta.btn1":"Agendar consulta","cta.btn2":"Diligenciar cuestionario",
+    "footer.legal":"Este sitio tiene fines informativos generales y no constituye asesoría legal, fiscal o financiera definitiva. Cada estructura societaria debe evaluarse con el apoyo de profesionales especializados, conforme a la normativa vigente de Estados Unidos y del país de residencia del cliente.<br><br>© 2026 Virtual Cloud World LLC. Florida, Estados Unidos. Todos los derechos reservados."
+  },
+  en: {
+    "nav.what":"What We Do","nav.commercial":"Commercial Operations","nav.structures":"Structures","nav.process":"Process","nav.compliance":"Compliance","nav.questionnaire":"Questionnaire","nav.cta":"Book a consultation",
+    "hero.eyebrow":"U.S. Business Formation for LATAM",
+    "hero.h1":"Operate, sell globally, and protect your assets through a <em>U.S. entity</em>",
+    "hero.lead":"Full-service formation, representation, and compliance of U.S. business entities for individuals and companies from Colombia and Latin America.",
+    "hero.btn1":"Book a consultation","hero.btn2":"Start questionnaire",
+    "pill.1":"Global commercial operations","pill.2":"Asset protection","pill.3":"Banking & crypto","pill.4":"KYC · AML · DD","pill.5":"Tax efficiency",
+    "hv.tag1":"Your current situation","hv.title1":"Business or assets in LATAM","hv.sub1":"Exposed to volatility, banking barriers, and a limited local market",
+    "hv.tag2":"What we build together","hv.title2":"LLC or C-Corp in the U.S.","hv.sub2":"International credibility · global financial access · structural protection",
+    "hv.tag3":"Result","hv.title3":"Two axes of value","hv.sub3":"Global sales of products & services + asset management and protection",
+    "trust.1":"Incorporated in Florida, U.S.A.","trust.2":"Clients across Colombia & LATAM","trust.3":"KYC/AML process at every stage","trust.4":"Bilingual service: Spanish & English","trust.5":"Compliance dossier included",
+    "ejes.eyebrow":"What We Do","ejes.h2":"A U.S. company serves two purposes — and we master both","ejes.p":"Most advisors know only one side. VCW delivers a structure that operates and protects at the same time.",
+    "eje.badge1":"Commercial axis","eje.h1":"Sell and operate globally","eje.p1":"A U.S. entity opens doors your local company cannot: international clients, global payment processors, corporate contracts, and institutional presence.",
+    "eje.li1a":"Invoice in USD to clients in any country","eje.li1b":"Access to Stripe, PayPal Business, Mercury, Wise Business","eje.li1c":"Higher-credibility contracts with international companies","eje.li1d":"E-commerce and digital services without geographic restrictions","eje.li1e":"Expansion into regulated markets: software, fintech, digital health","eje.li1f":"Reduced friction exporting services from LATAM to the world",
+    "eje.badge2":"Asset protection axis","eje.h2":"Protect and manage your assets","eje.p2":"Regulatory instability, currency devaluation, and low privacy erode wealth in LATAM. A U.S. structure safeguards it under the world's most solid legal system.",
+    "eje.li2a":"Legal separation between personal and business assets","eje.li2b":"Holding structure for real estate, securities, and investments outside LATAM","eje.li2c":"Protection against regulatory changes and capital controls","eje.li2d":"Estate planning and succession through a holding structure","eje.li2e":"Legal privacy of ownership composition","eje.li2f":"Access to securities brokers and regulated crypto asset custody",
+    "com.eyebrow":"Commercial Operations","com.h2":"Why selling through a U.S. entity changes everything","com.p":"A company in Colombia or Mexico can be excellent — but an LLC or C-Corp in the U.S. gives access to an ecosystem that simply does not exist in LATAM.",
+    "ben.h1":"International credibility","ben.p1":"Corporate clients and partners in the U.S., Europe, and Asia trust a counterparty with an EIN and a U.S. address far more than a foreign entity.",
+    "ben.h2":"Global payment processors","ben.p2":"Stripe, PayPal Business, Square, and most major processors require a U.S. entity to process international payments without restrictions.",
+    "ben.h3":"Corporate USD bank account","ben.p3":"Mercury, Relay, Brex, and traditional banks. Send and receive USD payments without the friction of the Latin American banking system.",
+    "ben.h4":"Amazon, Shopify & marketplaces","ben.p4":"Amazon Seller, Shopify Payments, and most global marketplaces prioritize or require sellers with a registered U.S. entity.",
+    "ben.h5":"B2B contracts without barriers","ben.p5":"International suppliers and partners prefer contracts under U.S. law. It reduces disputes and accelerates deal closing.",
+    "ben.h6":"Venture capital access","ben.p6":"U.S. venture capital funds invest almost exclusively in Delaware C-Corps. The right structure is the key to institutional investment.",
+    "ben.h7":"Software and SaaS services","ben.p7":"Technology companies and subscription models scale globally without friction when operating through a U.S. entity.",
+    "ben.h8":"Legal tax optimization","ben.p8":"LLCs with foreign members benefit from unique advantages under the federal tax code — no federal tax if income has no U.S. source.",
+    "ben.h9":"Borderless scalability","ben.p9":"From a local market to clients in 180 countries — a U.S. entity is the launch platform to grow globally.",
+    "str.eyebrow":"Entity Type","str.h2":"LLC vs. C-Corporation: the right decision for your objective","str.p":"The structure you choose will determine your tax burden, privacy, and access to capital. There is no one-size-fits-all.",
+    "tab.llc":"LLC — Limited Liability Company","tab.corp":"C-Corporation",
+    "cr.tax":"Taxation","cr.foreign":"Non-resident members","cr.privacy":"Privacy","cr.formalities":"Formalities","cr.bestfor":"Best for",
+    "llc.tax":"Pass-through taxation: income is reported at the member level, not at the entity level. No federal corporate income tax.",
+    "llc.foreign":"Allowed. A Colombian or Latin American citizen can be 100% owner without a visa or physical presence in the U.S.",
+    "llc.privacy":"High in Wyoming and New Mexico. Moderate in Florida and Delaware. Members are not public record in most states.",
+    "llc.formalities":"Low. No board of directors or formal minutes required. Ideal for agile, low-maintenance structures.",
+    "llc.bestfor":"Asset holding, real estate, professional services, e-commerce, investments, and asset protection.",
+    "llc.fit":"✓ Recommended for most LATAM clients seeking to operate and protect their assets without raising institutional capital.",
+    "corp.tax":"Federal corporate income tax (21%) plus tax on shareholder dividends. Double taxation on distributions.",
+    "corp.foreign":"Allowed. Foreign shareholders can be full owners without residency restrictions.",
+    "corp.privacy":"Moderate. Director lists may be public depending on the state; shareholders generally are not.",
+    "corp.formalities":"High. Requires a board of directors, shareholders, corporate minutes, and formal annual records.",
+    "corp.bestfor":"Startups seeking venture capital, structures issuing stock options, or companies planning to go public.",
+    "corp.fit":"✓ Recommended when the goal is to raise institutional capital, issue employee equity, or prepare for an investment round.",
+    "state.eyebrow":"Jurisdiction","state.h2":"Which state should you incorporate in?","state.p":"Each state has its own tax regime, privacy level, and maintenance cost. The choice matters.",
+    "st1.flag":"Venture capital","st1.p":"The de facto standard for startups and institutional investment. Predictable corporate legal framework, preferred by VC funds.",
+    "st2.flag":"Maximum privacy","st2.p":"No state income tax. Highest member privacy. Low maintenance cost. Ideal for asset holding and patrimonial structures.",
+    "st3.flag":"LATAM gateway","st3.p":"Natural hub for business with Latin America. No state personal income tax. Greater banking openness for remote foreign clients.",
+    "st4.flag":"Lowest cost","st4.p":"Lowest formation and maintenance costs in the country. High privacy. Ideal for lean or entry-level structures.",
+    "proc.eyebrow":"Methodology","proc.h2":"Five steps from start to finish","proc.p":"From initial diagnosis to ongoing compliance, we are with you at every stage.",
+    "step1.h":"Diagnosis","step1.p":"We understand your goal — commercial, asset protection, or both — and your risk profile.",
+    "step2.h":"Design","step2.p":"We define the entity type, state, ownership structure, and layers of protection.",
+    "step3.h":"Formation","step3.p":"Legal incorporation, registered agent, Operating Agreement, and EIN.",
+    "step4.h":"Banking","step4.p":"Guidance through opening a corporate account, securities broker, and/or regulated crypto exchange.",
+    "step5.h":"Compliance","step5.p":"KYC/AML dossier, annual renewals, and ongoing regulatory support.",
+    "ent.eyebrow":"Your deliverables","ent.h2":"What you receive upon completion","ent.p":"Five concrete documents and accounts that constitute your complete structure.",
+    "e1.h":"Operating Agreement","e1.p":"Agreement defining rights, responsibilities, and governance of the LLC.",
+    "e2.h":"Certificate of Formation","e2.p":"Official state document certifying the legal existence of the entity.",
+    "e3.h":"EIN (Tax ID)","e3.p":"Federal tax identification number, required for banking, contracts, and IRS filings.",
+    "e4.h":"Bank / fintech account","e4.p":"Active corporate account at a bank or fintech platform to operate in USD.",
+    "e5.h":"KYC/AML/DD Dossier","e5.p":"Compliance report that strengthens the client's position with banks, brokers, and institutions.",
+    "bank.eyebrow":"Financial Access","bank.h2":"Banking, securities, and crypto assets","bank.p":"A U.S. entity unlocks access to the international financial system — both traditional and digital.",
+    "bank.trad":"🏛 Traditional financial system",
+    "bank.t1":"Mercury, Relay, Brex: multi-currency corporate accounts, no physical visit required","bank.t2":"FINRA/SEC-regulated brokers: access to U.S. stock exchanges","bank.t3":"Payment processors: Stripe, PayPal Business, Square","bank.t4":"Corporate cards for global operating expenses","bank.t5":"Corporate credit lines and treasury products",
+    "bank.crypto":"₿ Digital assets and cryptocurrencies",
+    "bank.c1":"Corporate accounts at regulated exchanges: Coinbase Institutional, Kraken Pro","bank.c2":"Institutional crypto asset custody with regulatory backing","bank.c3":"Operations structured to comply with AML/KYC standards","bank.c4":"Wallet traceability and on-chain source-of-funds analysis","bank.c5":"Access to institutional DeFi products from a legal structure",
+    "kyc.eyebrow":"Compliance","kyc.h2":"KYC, AML, and Due Diligence at every stage","kyc.p":"The compliance process is an asset. A well-built dossier opens doors at banks, brokers, and international institutions.",
+    "kyc.h1":"Identity verification","kyc.p1":"Identity and ultimate beneficial owner (UBO) validation, in line with FATF standards.",
+    "kyc.h2":"Source of funds","kyc.p2":"Analysis and documentation of the lawful origin of funds entering the structure.",
+    "kyc.h3":"International sanctions lists","kyc.p3":"Screening against OFAC SDN, UN Consolidated List, EU Sanctions Map, and PEP databases.",
+    "kyc.h4":"Crypto traceability","kyc.p4":"Wallet and transaction hash analysis to confirm clean origin of digital funds.",
+    "kyc.h5":"Risk classification","kyc.p5":"Documented risk profile (Low / Medium / High) with four-eyes principle.",
+    "kyc.h6":"Compliance dossier","kyc.p6":"Consolidated report the client presents to banks and institutions as due diligence evidence.",
+    "kyc.h7":"Ongoing monitoring","kyc.p7":"Alert tracking, regulatory changes, and periodic risk profile reassessment.",
+    "kyc.h8":"Defensible documentation","kyc.p8":"Structured, auditable file reproducible before any regulatory authority.",
+    "reg.h":"Regulatory framework — July 2026",
+    "reg.p":"<strong>BOI / CTA (FinCEN):</strong> Under the 2025 interim rule, U.S.-formed entities are temporarily exempt from reporting beneficial owners to FinCEN. The obligation currently applies only to foreign entities registered to operate in the U.S. This framework is subject to change.<br><br><strong>Federal tax obligations:</strong> EIN required. A single-member LLC with a foreign owner must file annual informational returns with the IRS (Forms 5472 + 1120). State taxes vary by jurisdiction.<br><br>This content is for general informational purposes only and does not constitute legal or tax advice.",
+    "docs.eyebrow":"VCW Resources","docs.h2":"Specialized documentation at your disposal","docs.p":"Each document was developed to ensure our clients are informed and prepared at every stage of the process.",
+    "doc1.tag":"Main guide","doc1.h":"Florida Business Entities Guide","doc1.p":"LLC vs. C-Corp, state comparison, tax treatment, banking tiers, and KYC/AML requirements by client profile.",
+    "doc2.tag":"Awareness","doc2.h":"U.S. Assets: Why Now?","doc2.p":"Overview of wealth concentration risk in LATAM and the advantages of diversifying into the United States.",
+    "doc3.tag":"Deliverables","doc3.h":"Florida LLC Deliverables Guide","doc3.p":"The five deliverables explained: Operating Agreement, Certificate of Formation, EIN, bank account, and KYC/AML dossier.",
+    "doc4.tag":"Compliance","doc4.h":"KYC/AML/DD Client Guide","doc4.p":"The due diligence process, required documents, and how to use the resulting dossier with financial institutions.",
+    "doc5.tag":"Privacy","doc5.h":"Data Control and Asset Protection","doc5.p":"Privacy framework, protection layers, limits of compelled disclosure, and control design by client profile.",
+    "doc6.tag":"Corporate governance","doc6.h":"Operating Agreement: Strategic Value","doc6.p":"Why the Operating Agreement is far more than a legal requirement: rights, protections, and compliance signals.",
+    "diff.eyebrow":"Why VCW","diff.h2":"More rigorous than platforms. More accessible than elite firms.","diff.p":"VCW occupies a deliberate space: more structured than a generic formation agent, more personalized than Stripe Atlas or doola, more accessible than an ultra-HNW advisory firm.",
+    "dif1.h":"Four simultaneous lenses","dif1.p":"Corporate and tax law, banking and crypto access, KYC/AML defensibility, and data control. Never addressed in isolation.",
+    "dif2.h":"Personalized bilingual advisory","dif2.p":"We serve our clients in Spanish and communicate with U.S. financial institutions in English — the right language in every context.",
+    "dif3.h":"The KYC dossier is an asset","dif3.p":"The compliance report we produce strengthens the client's standing with banks, brokers, and institutions — it is a deliverable of value, not just a formality.",
+    "dif4.h":"Real financial access network","dif4.p":"We know the specific requirements of Mercury, Brex, Coinbase Institutional, and others for non-resident clients. We do not just tell you to open an account — we help you do it.",
+    "dif5.h":"Ongoing compliance","dif5.p":"Most formation agents stop when they hand over the documents. We continue: renewals, regulatory changes, reassessments, and permanent support.",
+    "cta.eyebrow":"Let's start","cta.h2":"Your U.S. company can be active within weeks","cta.p":"A no-commitment initial consultation. Let's define together whether the goal is to operate, protect, or both — and which structure makes sense for your case.",
+    "cta.btn1":"Book a consultation","cta.btn2":"Complete questionnaire",
+    "footer.legal":"This site is for general informational purposes only and does not constitute legal, tax, or financial advice. Each corporate structure must be evaluated with the support of qualified professionals in accordance with applicable U.S. law and the law of the client's country of residence.<br><br>© 2026 Virtual Cloud World LLC. Florida, United States. All rights reserved."
+  }
+};
+
+let lang = 'es';
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.getElementById('btn-es').classList.toggle('active', l==='es');
+  document.getElementById('btn-en').classList.toggle('active', l==='en');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    if(T[l][key] !== undefined) el.innerHTML = T[l][key];
+  });
+  // update page title and meta description
+  document.title = l==='en'
+    ? 'Virtual Cloud World LLC · U.S. Companies for LATAM'
+    : 'Virtual Cloud World LLC · Sociedades en EE.UU. para LATAM';
+  document.querySelector('meta[name=description]').setAttribute('content',
+    l==='en'
+    ? 'Form your U.S. company. Sell globally, protect your assets, and access the international financial system. Advisory for Colombia and Latin America.'
+    : 'Constituya su empresa en EE.UU. Venda globalmente, proteja su patrimonio y acceda al sistema financiero internacional. Asesoría para Colombia y LATAM.'
+  );
+  // save preference
+  localStorage.setItem('vcw-lang', l);
+}
+
+// Tabs LLC / C-Corp
+document.querySelectorAll('.comp-tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.comp-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.comp-pane').forEach(p=>p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('pane-'+tab.dataset.tab).classList.add('active');
+  });
+});
+
+// Scroll reveal
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Restore language preference
+const saved = localStorage.getItem('vcw-lang');
+if(saved && saved !== 'es') setLang(saved);
+</script>
+</body>
+</html>
